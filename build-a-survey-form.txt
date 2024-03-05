@@ -1,0 +1,131 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Welcome to our Survey Form!</p>
+    <form class="container" id="survey-form">
+      <hr>
+      <fieldset>
+        <label id="name-label" for="name">Enter your name: <input class="block text-field" type="text" id="name" name="name" placeholder="Maria da Penha" required></label>
+        <label id="email-label" for="email">Enter your email: <input class="block text-field" type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required></label>
+        <label id="number-label" for="number">Enter your age: <input class="block" type="number" id="number" name="number" min="1" max="120" placeholder="Age" required></label>
+        <label for="dropdown">Genre:
+          <select class="block" id="dropdown" name="dropdown">
+            <option value="">[select one]</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+        </label>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <label class="block" for="button">
+        How did you find us? <p></p>
+          <input class="space"  type="radio" id="button" name="button" value="button" checked> Journal
+          <input class="space"  type="radio" id="button" name="button" value="button"> Social Media
+          <input class="space"  type="radio" id="button" name="button" value="button"> Friends
+          <input class="space"  type="radio" id="button" name="button" value="button"> Other
+        </label>
+        <label class="block" for="news">
+          What type of news would you like to receive?<p></p>
+          <input class="space"  type="checkbox" id="news" name="news" value="1" > Sports
+          <input class="space"  type="checkbox" id="news" name="news" value="2"> Anime
+          <input class="space" type="checkbox" id="news" name="news" value="3"> Lifestyle
+          <input class="space"  type="checkbox" id="news" name="news" value="4"> Technology
+        </label>
+        <label class="block" for="feedback">
+          Let us know about your opinion:
+          <textarea class="block" id="feedback" name="feedback" cols="40" rows="5" placeholder="It would be interesting if..."></textarea>
+        </label>
+      </fieldset>
+      <hr>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+}
+
+h1,
+p,
+body {
+  font-family: system-ui;
+  color: white;
+  margin: 10px auto;
+}
+
+textarea {
+  font-family: system-ui;
+}
+
+body {
+  background-color: #1d2e68;
+  font-size: 16px;
+}
+
+input,
+select,
+textarea {
+  margin: 7px auto;
+  text-align: center;
+
+}
+
+.container {
+  width-max: 100%;
+  width: 500px;
+  height: 630px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color:#1d2e68;
+}
+
+.block {
+  display: block;
+  padding: 2px 10px;
+}
+
+.space {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.text-field {
+  width: 60%;
+}
+
+hr {
+  border-color: #87a6ea;
+}
+
+fieldset {
+  border: none;
+}
+
+input[value="Submit"]{
+  width: 30%;
+}
+
+** end of undefined **
+
