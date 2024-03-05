@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="css/styles.css"/>
+        <title>Subscription Form</title>
+    </head>
+    <body>
+        <h1>Subscription Form</h1>
+        <p>Please, consider to subscribe to receive news everyday.</p>
+        <form class="container"  method="POST" action="https://test.com">
+            <fieldset>
+                <label for="firstName">
+                    First Name:
+                    <input  id="firstName" name="firstName" type="text" required/>
+                </label>
+                <label for="lastName">
+                    Last Name:
+                    <input id="lastName" name="lastName" type="text" required/>
+                </label>
+                <label for="email">
+                    E-mail:
+                    <input type="email" id="email" name="email" required/>
+                </label>
+                <label for="telNumber">
+                    Tel:
+                    <input placeholder="(DDD) 1234-5678" type="tel" id="telNumber" name="telNumber"/>
+                </label>
+                <label for="genre">
+                    Genre:
+                    <input name="genre" id="m" type="radio" checked/> Male
+                    <input name="genre" id="f" type="radio"/> Female
+                </label>
+            </fieldset>
+            <fieldset>
+                <label class="padding" for="referrer"> How did you find us?
+                    <select id="referrer" name="referrer">
+                        <option value="">[select one]</option>
+                        <option value="1">News</option>
+                        <option value="2">Friends</option>
+                        <option value="3">Youtube</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label class="padding block" for="feedback">
+                    Give us your feedback:
+                    <!-- <p class="feedbackP">Give us your feedback:</p> -->
+                    <textarea class="block" id="feedback" name="feedback" rows="3" cols="30" placeholder="I think you should improve..."></textarea> 
+                </label>
+            </fieldset>
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required> I agree with <a href="link.com"> terms and conditions</a>.
+            </label>
+            <input type="submit" value="Submit"> 
+        </form>
+
+    </body>
+</html>
